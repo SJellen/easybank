@@ -2,5 +2,50 @@
 body {
   font-size: 18px;
   font-family: 'Public Sans', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+header .logo {
+  margin-left: 11%;
+  margin-top: 32px;
+}
+
+header .request-invite {
+  float: right;
+}
+
+header .hamburger {
+  float: right;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+header .header-links {
+  width: 40%;
+  margin-left: 33%;
+  margin-top: -60px;
+}
+
+header .header-links li {
+  display: inline-block;
+  padding: 30px 15px;
+  font-size: 1rem;
+  color: #9698a6;
+}
+
+header li:hover {
+  cursor: pointer;
+  color: #2d314d;
+  border-bottom: 5px solid red;
 }
 /*# sourceMappingURL=style.css.map */
