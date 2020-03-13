@@ -30,6 +30,7 @@ header .hamburger {
   float: right;
   margin-right: 3%;
   margin-top: 2%;
+  display: none;
 }
 
 header .header-links {
@@ -43,12 +44,23 @@ header .header-links li {
   padding: 30px 15px;
   font-size: 1rem;
   color: #9698a6;
-  border: 1px solid red;
 }
 
 header li:hover {
   cursor: pointer;
   color: #2d314d;
+}
+
+header li:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  margin-top: 25px;
+  margin-left: -5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(60%), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, 60%, #2bb7da);
 }
 
 header .request-invite {
@@ -138,6 +150,7 @@ header .request-invite:hover {
 }
 
 .middle .middle-word-box {
+  line-height: 1.5;
   width: 45%;
   float: left;
   margin-top: 5%;
@@ -156,7 +169,6 @@ header .request-invite:hover {
 }
 
 .middle .card-box {
-  border: 1px solid blue;
   width: 90%;
   height: 300px;
   margin-top: 20%;
@@ -169,7 +181,6 @@ header .request-invite:hover {
 
 .middle .card-box .card {
   width: 260px;
-  border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
 }
@@ -188,7 +199,7 @@ header .request-invite:hover {
 .bottom {
   background-color: #fafafa;
   margin-top: -2rem;
-  height: 660px;
+  padding-bottom: 10%;
 }
 
 .bottom h2 {
@@ -201,9 +212,7 @@ header .request-invite:hover {
 }
 
 .bottom .article-box {
-  border: 1px solid green;
-  width: 90%;
-  height: 300px;
+  width: 77%;
   margin-top: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,14 +222,88 @@ header .request-invite:hover {
 }
 
 .bottom .article {
-  border: 1px solid cyan;
   height: 300px;
+  margin-right: 30px;
+  background-color: white;
+  padding-bottom: 9%;
 }
 
 .bottom .article img {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   height: 200px;
-  width: 250px;
+  width: 255px;
+}
+
+.bottom .article h4 {
+  color: #9698a6;
+  font-size: .65rem;
+  font-weight: 300;
+  margin-left: 2rem;
+}
+
+.bottom .article h3 {
+  margin-left: 2rem;
+  font-weight: 400;
+  font-size: .975rem;
+  color: #2d314d;
+  width: 75%;
+}
+
+.bottom .article h3:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+.bottom .article p {
+  font-size: .75rem;
+  color: #9698a6;
+  font-weight: 400;
+  margin-left: 2rem;
+  width: 78%;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #2d314d;
+}
+
+footer img.logo {
+  margin-left: 11.5%;
+  margin-top: 3.25%;
+}
+
+footer .social {
+  margin-top: 3.5%;
+  margin-left: 11.5%;
+}
+
+footer .social img {
+  padding-right: 1%;
+}
+
+footer .social img:hover {
+  -webkit-filter: invert(57%) sepia(92%) saturate(334%) hue-rotate(131deg) brightness(100%) contrast(98%);
+          filter: invert(57%) sepia(92%) saturate(334%) hue-rotate(131deg) brightness(100%) contrast(98%);
+  cursor: pointer;
+}
+
+footer .request-invite {
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(60%), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, 60%, #2bb7da);
+  border: none;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  color: white;
+  font-size: .9rem;
+  float: right;
+  margin-top: -19%;
+  margin-right: 11.5%;
+}
+
+footer .request-invite:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
