@@ -82,6 +82,9 @@ header .request-invite:hover {
 }
 
 .top {
+  background-image: url(./images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right -450px top -250px;
   background-color: #fafafa;
   margin-top: -1.75%;
   overflow-x: hidden;
@@ -136,6 +139,7 @@ header .request-invite:hover {
 .top .top-word-box h1 {
   font-size: 3rem;
   color: #2d314d;
+  z-index: 2;
 }
 
 .top .top-word-box p {
@@ -266,6 +270,7 @@ header .request-invite:hover {
 
 footer {
   background-color: #2d314d;
+  height: 190px;
 }
 
 footer img.logo {
@@ -298,12 +303,47 @@ footer .request-invite {
   color: white;
   font-size: .9rem;
   float: right;
-  margin-top: -19%;
+  margin-top: -7%;
   margin-right: 11.5%;
 }
 
 footer .request-invite:hover {
-  opacity: .8;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(49, 211, 92, 0.75)), color-stop(60%), to(rgba(43, 183, 218, 0.75)));
+  background-image: linear-gradient(to right, rgba(49, 211, 92, 0.75), 60%, rgba(43, 183, 218, 0.75));
   cursor: pointer;
+}
+
+footer .link-list1 {
+  list-style: none;
+  color: white;
+  width: 10%;
+  line-height: 2;
+  margin-left: 20%;
+  margin-top: -6rem;
+  font-size: .9rem;
+}
+
+footer .link-list2 {
+  list-style: none;
+  color: white;
+  width: 10%;
+  line-height: 2;
+  margin-left: 40%;
+  margin-top: -6.25rem;
+  font-size: .9rem;
+}
+
+footer li:hover {
+  color: turquoise;
+  cursor: pointer;
+}
+
+footer h3 {
+  color: #9698a6;
+  font-size: 1rem;
+  font-weight: 300;
+  float: right;
+  margin-top: -2rem;
+  margin-right: 11%;
 }
 /*# sourceMappingURL=style.css.map */

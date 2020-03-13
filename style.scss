@@ -92,7 +92,9 @@ header {
     }
 
     .top {
-        
+        background-image: url(./images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right -450px top -250px;
         background-color: $veryLightGray;
         margin-top: -1.75%;
         overflow-x: hidden;
@@ -142,6 +144,8 @@ header {
             h1 {
                 font-size: 3rem;
                 color: $darkBlue;
+                z-index: 2;
+                
             }
             p {
                 
@@ -259,6 +263,7 @@ header {
 
 footer {
     background-color: $darkBlue;
+    height: 190px;
     img.logo {
         margin-left: 11.5%;
         margin-top: 3.25%;
@@ -284,13 +289,43 @@ footer {
         color: $white;
         font-size: .9rem;
         float: right;
-        margin-top: -19%;
+        margin-top: -7%;
         margin-right: 11.5%;
     }
     .request-invite:hover {
 
-        opacity: .8;
+        background-image: linear-gradient(to right, hsla(136, 65%, 51%, .75), 60%, hsla(192, 70%, 51%, .75));
         cursor: pointer;
+    }
+    .link-list1 {
+        list-style: none;
+        color: $white;
+        width: 10%;
+        line-height: 2;
+        margin-left: 20%;
+        margin-top: -6rem;
+        font-size: .9rem;
+    }
+    .link-list2 {
+        list-style: none;
+        color: $white;
+        width: 10%;
+        line-height: 2;
+        margin-left: 40%;
+        margin-top: -6.25rem;
+        font-size: .9rem;
+    }
+    li:hover {
+       color: turquoise;
+       cursor: pointer;
+    }
+    h3 {
+        color: $grayishBlue;
+        font-size: 1rem;
+        font-weight: 300;
+        float: right;
+        margin-top: -2rem;
+        margin-right: 11%;
     }
 
 
