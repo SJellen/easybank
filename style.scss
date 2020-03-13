@@ -92,6 +92,7 @@ header {
     }
 
     .top {
+        width: 100%;
         background-image: url(./images/bg-intro-desktop.svg);
         background-repeat: no-repeat;
         background-position: right -450px top -250px;
@@ -329,5 +330,32 @@ footer {
     }
 
 
+}
+
+.attribution {
+    color: $grayishBlue; 
+    float: right;
+    margin-top: -2rem;
+    margin-right: 7rem;
+    opacity: 1;
+    animation-name: attrib;
+    animation-duration: 1000ms;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    @keyframes attrib {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    a {
+        color: $grayishBlue;
+        text-decoration: none;
+    }
+    :link {
+        color: $grayishBlue;
+    }
 }
 

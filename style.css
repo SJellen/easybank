@@ -82,6 +82,7 @@ header .request-invite:hover {
 }
 
 .top {
+  width: 100%;
   background-image: url(./images/bg-intro-desktop.svg);
   background-repeat: no-repeat;
   background-position: right -450px top -250px;
@@ -345,5 +346,48 @@ footer h3 {
   float: right;
   margin-top: -2rem;
   margin-right: 11%;
+}
+
+.attribution {
+  color: #9698a6;
+  float: right;
+  margin-top: -2rem;
+  margin-right: 7rem;
+  opacity: 1;
+  -webkit-animation-name: attrib;
+          animation-name: attrib;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes attrib {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes attrib {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.attribution a {
+  color: #9698a6;
+  text-decoration: none;
+}
+
+.attribution :link {
+  color: #9698a6;
 }
 /*# sourceMappingURL=style.css.map */
