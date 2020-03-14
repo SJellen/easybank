@@ -167,6 +167,7 @@ header .request-invite:hover {
 .middle .middle-word-box h2 {
   font-size: 2.25rem;
   font-weight: 400;
+  color: #2d314d;
 }
 
 .middle .middle-word-box p {
@@ -504,6 +505,9 @@ footer h3 {
   header .hamburger:hover {
     cursor: pointer;
   }
+  header .request-invite {
+    display: none;
+  }
   header .nav {
     display: none;
     top: 120%;
@@ -543,6 +547,9 @@ footer h3 {
     margin-top: 25px;
     margin-left: -5px;
     background-image: none;
+  }
+  .top img.mockups {
+    margin-right: 5%;
   }
   .top p {
     width: 70%;
@@ -678,6 +685,69 @@ footer h3 {
   }
   footer h3 {
     margin-left: 32%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    max-width: 100%;
+  }
+  header {
+    height: 50px;
+  }
+  .top {
+    background-size: 100%;
+    background-position: right 0px top -60px;
+  }
+  .top img.mockups {
+    margin-top: -52.5rem;
+  }
+  .top .top-word-box {
+    margin-top: 23rem;
+  }
+  .top .top-word-box h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  .top .top-word-box p {
+    width: 100%;
+  }
+  .top .top-word-box .request-invite {
+    margin-left: 25%;
+  }
+  .middle {
+    height: 1400px;
+  }
+  .middle .middle-word-box h2 {
+    font-weight: 300;
+    line-height: 1.25;
+    font-size: 2rem;
+  }
+  .middle .middle-word-box p {
+    width: 90%;
+    text-align: center;
+    font-size: .9rem;
+  }
+  .middle .card-box .card {
+    width: 100%;
+  }
+  .middle .card-box .card img {
+    margin-left: 37%;
+  }
+  .middle .card-box .card h3 {
+    text-align: center;
+  }
+  .middle .card-box .card p {
+    text-align: center;
+    width: 100%;
+  }
+  .bottom h2 {
+    font-weight: 300;
+    margin-bottom: -2rem;
+  }
+  .bottom .article-box {
+    margin-left: 7%;
   }
 }
 /*# sourceMappingURL=style.css.map */
